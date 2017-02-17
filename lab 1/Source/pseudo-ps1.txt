@@ -1,0 +1,11 @@
+#pseudo code for oddman out
+n=[1,1,2,3,4,5,6,6,8,9,1] #an example list
+def print_odd(n):
+    new_lst=[]
+    for x in n:
+        if x not in new_lst:
+          new_lst.append(x)
+          n.remove(x)
+    return new_lst,n
+print new_lst,n #original list contains the non repeated number
+    
